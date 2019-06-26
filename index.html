@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angualr Test</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    #myDiv {
+      border: 1px solid gray;
+      width: 500px;
+      height: 300px;
+    }
+
+    #inputText {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+  <div id="myDiv">
+    <div class="insidediv">
+      <input id="inputText" type="text" placeholder="search" ng-keyup="$event.keyCode == 13 && searchItem($event);">
+    </div>
+    <div id="dataDiv">
+
+    </div>
+  </div>
+</body>
+</html>
